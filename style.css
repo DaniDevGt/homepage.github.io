@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color: #adb5bd;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+body , html{
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+.logo{
+    width: 50px;
+    margin-left: 25px;
+}
+
+/* Contact Button */
+
+.btn{
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: black;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: black;
+    transform: translateY(-7px);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+/* header */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/background-black.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 100px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #adb5bd;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px ;
+    background: #adb5bd;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Models */
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #adb5bd;
+}
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col{
+    margin: 0 30px;
+}
+
+.up-models .row{
+    margin-top: 50px;
+    margin-left: -40px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #adb5bd;
+    margin: 20px;
+}
+
+p{
+    color: #adb5bd;
+    padding: 0px 40px;
+}
+
+.up-models .ctn{
+    margin-top: 30px;
+}
+
+.road-cyber{
+    height: 350px;
+    width: 600px;
+    align-items: flex-start;
+}
+
+.solar{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Solar-Panel-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.solar-content{
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.solar-content h1{
+    font-size: 7vmin;
+    margin: 50px;
+}
+
+.solar-content p{
+    color: whitesmoke;
+}
+
+.solar-content .ctn{
+    margin-top: 40px;
+}
+
+.text{
+    font-size: 4vmin;
+    color: #adb5bd;
+    text-align: center;
+    margin: 50px;
+}
+
+.sexy{
+    height: 350px;
+    width: 600px;
+    align-items: flex-start;
+    margin-left: -25px;
+}
+
+.final{
+    margin-bottom: 30px;
+}
+
+.mod{
+    margin-top: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+footer p{
+    margin: 20px 0;
+    padding: 20px auto;
+}
+
+/* Button Background Header */
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+/* Button Models */
+
+.black-btn{
+    margin-top: 30px;
+}
+
+.main_div {
+    --color: #3992e6;
+    position: relative;
+    z-index: 1;
+}
+
+.main_div::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: -7px;
+    left: -7px;
+    z-index: -5;
+    border-top: 3px solid var(--color);
+    border-left: 3px solid var(--color);
+    transition: 0.5s;
+}
+
+.main_div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    bottom: -7px;
+    right: -7px;
+    z-index: -5;
+    border-right: 3px solid var(--color);
+    border-bottom: 3px solid var(--color);
+    transition: 0.5s;
+}
+
+.main_div:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.main_div:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.main_div button {
+    padding: 0.7em 2em;
+    font-size: 16px;
+    background: #222222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Mobile device */
+@media only screen and (max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        position: absolute;
+        top: 15px;
+        left: 25px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #9fa5ac;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        opacity: 0.9;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+    /* Up-Models */
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col{
+        margin-left: 100px;
+    }
+
+    .col img{
+        max-width: 90%;
+    }
+
+    .learn-more{
+        display: none;
+    }
+
+    .black-btn{
+        margin-bottom: 20px;
+    }
+
+    .solar{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 390px){
+}
